@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kr6_cell</name>
+  <version>0.1.0</version>
+  <description>KR 6 R900-2 robotcella (szerszámgép, munkadarab, futószalag) MoveIt-tel, a kroshu education moveit_example alapján</description>
+  <maintainer email="eprestamas@gmail.com">tomi</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_visual_tools</depend>
+  <depend>rclcpp</depend>
+
+  <exec_depend>kuka_rsi_driver</exec_depend>
+  <exec_depend>kuka_mock_hardware_interface</exec_depend>
+  <exec_depend>kuka_agilus_support</exec_depend>
+  <exec_depend>kuka_kr_moveit_config</exec_depend>
+  <exec_depend>kuka_resources</exec_depend>
+  <exec_depend>moveit</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
